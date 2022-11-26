@@ -67,7 +67,12 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  var str1_2 = str1.length();
+  var str2_2 = str2.length();
+  if(str1_2 == str2_2){
+    return true;
+  }
+  return false;
 }
 
 function menosQueNoventa(num) {
@@ -120,25 +125,29 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+  var numElevado = Math.pow(num, exponent);
+  return numElevado;
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  var redondeo = Math.round(num);
+  return redondeo;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  var redondeoArriba = Math.ceil(num);
+  return redondeoArriba;
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+  var random = Math.random();
+  return random;
 }
 
 function esPositivo(numero) {
