@@ -6,6 +6,14 @@ function crearGato (nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
+  const gato = {
+    nombre: nombre,
+    edad: edad,
+    meow: function() {
+      return "Meow!";
+    }
+  };
+  return gato;
 }
 
 function agregarPropiedad (objeto, property) {
@@ -26,6 +34,8 @@ function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
+  objetoMisterioso.numeroMisterioso *= 5;
+  return objetoMisterioso.numeroMisterioso; 
 
 }
 
@@ -40,7 +50,12 @@ function nuevoUsuario (nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-
+  const user = {
+  };
+  user.nombre = nombre;
+  user.email = email;
+  user.password = password;
+  return user;
 }
 
 function tieneEmail (usuario) {
@@ -61,12 +76,19 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (usuario.password === password) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function actualizarPassword (usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevaPassword"
   // Devuelve el objeto
   // Tu código:
+  usuario.password = nuevaPassword;
+  return usuario;
 }
 
 function agregarAmigo (usuario, nuevoAmigo) {
@@ -103,7 +125,12 @@ function agregarMetodoCalculoDescuento (producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-
+  producto.calcularPrecioDescuento = function(){
+    var mult = producto.precio * producto.porcentajeDeDescuento;
+    var descuento = producto.precio - mult;
+    return producto.precio = descuento;
+  }
+  return producto;
 }
 
 // No modificar nada debajo de esta línea
