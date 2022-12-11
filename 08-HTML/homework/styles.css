@@ -1,0 +1,24 @@
+* {
+  margin: 0 auto;
+}
+body {
+  margin: auto;
+  text-align: center;
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-linea-elegante-hexagonal-patron_1017-19742.jpg?w=2000);
+}
+img {
+  width: 400px;
+}
+#thirdDiv {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  width: 500px;
+  background-color: cadetblue;
+  padding: 50px;
+  border: 5px solid black;
+}
+#spanId {
+  font-size: 18px;
+  margin: 50px;
+}
